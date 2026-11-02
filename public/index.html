@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ร้านอาหารออนไลน์</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ครัวลุงตี๋ 🍜</h1>
+    </header>
+
+    <main>
+      <section class="menu">
+        <h2>เมนูอาหาร</h2>
+        <div id="menu-list" class="grid"></div>
+      </section>
+
+      <aside class="cart">
+        <h2>ตะกร้าสินค้า</h2>
+        <ul id="cart-list"></ul>
+        <p class="total">รวม: <span id="cart-total">0</span> บาท</p>
+        <input id="customer-name" type="text" placeholder="ชื่อผู้สั่ง" />
+        <button id="order-btn">สั่งอาหาร</button>
+        <p id="message"></p>
+      </aside>
+    </main>
+
+    <section class="orders">
+      <h2>รายการคำสั่งซื้อ</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>ผู้สั่ง</th>
+            <th>ยอดรวม</th>
+            <th>เวลา</th>
+            <th>สถานะ</th>
+          </tr>
+        </thead>
+        <tbody id="order-list"></tbody>
+      </table>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
